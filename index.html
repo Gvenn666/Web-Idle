@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Idle</title>
+        <script src="js/game.js"></script>
+    </head>
+    <body>
+        <p>You Have: £<span id='money'>0</span> (+<span id="pps">0</span>/s)</p>
+        <button onclick='addMoney()'>Click!</button></br>
+        <button id='sofasBtn' onclick="buySofa()">Buy Sofa (£<span id=sofaPrice>10</span>) + £<span id=sofaRate>1</span>/s</button> <button onclick="resetSofas()">Reset Sofas!</button>
+        <p>Sofas: <span id=sofaCount>0</span></br>
+        <button id='investBtn' onclick="buyInvestor()">Buy Investor (£<span id=investPrice>10</span>) + %<span id=investRate>1</span>/s</button> <button onclick="resetInvestors()">Reset Investors!</button>
+        <p>investors: <span id=investCount>0</span></br>
+        <button id='lemonBtn' onclick="buyLemonade()">Buy Lemonade Stand (£<span id=lemonPrice>10</span>) + £<span id=lemonRate>1</span>/s</button> <button onclick="resetLemonades()">Reset Lemonade Stands!</button>
+        <p>Lemonade Stands: <span id=lemonCount>0</span></br>
+        
+        <button id='sofaUpgrade01'onclick='upgrade(0)'>New Upholstery (£100) Sofas x2/s<span id='sofaUpgrade01State'></span></button></br>
+        <button id='sofaUpgrade02'onclick='upgrade(1)'>More Change (£1000) Sofas x4/s<span id='sofaUpgrade02State'> (LOCKED)</span></button></br>
+        <button id='investUpgrade01'onclick='upgrade(2)'>Investing 101 (£10000) Investors +0.05%/Investor<span id='investUpgrade01State'> (LOCKED)</span></button></br>
+        <button id='investUpgrade02'onclick='upgrade(3)'>Faster Stock Exchanges (£20000) Investors +0.1%/Investor<span id='investUpgrade02State'> (LOCKED)</span></button></br>
+        <button id='lemonUpgrade01'onclick='upgrade(4)'>Better Lemons +20% ($25000)<span id='lemonUpgrade01State'> (LOCKED)</span></button></br>
+    </body>
+
+    <footer>
+        <script>init();</script>
+    </footer>
+
+</html>
