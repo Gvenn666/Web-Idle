@@ -1,9 +1,9 @@
 var moneyCount = 10;
 
 const sofaInitPrice = 5;
-var numOfSofas = 100;
+var numOfSofas = 0;
 var sofaPrice = sofaInitPrice;
-var sofaRate = 1;
+var sofaRate = 0.2;
 
 const investInitPrice = 50;
 var numOfInvestors = 0;
